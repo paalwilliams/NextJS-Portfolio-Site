@@ -1,16 +1,49 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        @font-face {
+            font-family: "Apoc Dark Italic";
+            src: url("/fonts/AT Apoc Dark Italic.ttf");
+            font-weight: 700;
+        }
+        
+        @font-face {
+            font-family: "Liberation Sans Bold";
+            src: url(/fonts/liberationsans-bold-webfont.woff2) format("woff2"), url(/fonts/liberationsans-bold-webfont.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "Liberation Sans Bold Italic";
+            src: url(/fonts/liberationsans-bolditalic-webfont.woff2) format("woff2"), url(/fonts/liberationsans-bolditalic-webfont.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "Liberation Sans Italic";
+            src: url(/fonts/liberationsans-italic-webfont.woff2) format("woff2"), url(/fonts/liberationsans-italic-webfont.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "Liberation Sans";
+            src: url(/fonts/liberationsans-regular-webfont.woff2) format("woff2"), url(/fonts/liberationsans-regular-webfont.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }

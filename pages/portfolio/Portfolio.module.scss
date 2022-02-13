@@ -1,0 +1,16 @@
+.portfolioContainer {
+    width: 95%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    &:hover {
+        cursor: pointer
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .portfolioContainer {
+        justify-content: center;
+        flex-direction: column;
+    }
+}

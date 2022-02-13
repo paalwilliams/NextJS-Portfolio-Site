@@ -1,0 +1,29 @@
+.portfolioItemCard {
+    width: 250px;
+    border-radius: 20px;
+    height: 500px;
+    width: 350px;
+    position: relative;
+    padding: 25px;
+    margin: 25px;
+    flex-shrink: 0;
+    box-shadow: 10px 10px 15px grey;
+    transition: box-shadow 0.09s ease-in-out;
+    .bgimg {
+        filter: brightness(.9);
+        transition: filter 0.09s ease-in-out;
+    }
+}
+
+.bgimg {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.text {
+    color: white;
+    text-align: center;
+}
