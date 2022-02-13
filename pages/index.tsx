@@ -1,23 +1,20 @@
 import axios from "axios"
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import { useEffect, useState } from "react"
-import styles from '../styles/Home.module.css'
-import { createMarkup } from "../utils/createMarkup"
-import { getFrontPage } from "../utils/pageUtils/pageUtils"
+import styles from '../styles/Home.module.css';
 import Page from '../components/Page/Page';
 import Loading from "../components/Layout/Loading/Loading"
+import { setEnvironmentConfiguration } from "../utils/config";
 
 const Home: NextPage = () => {
 
     let [homePageState, setHomePageState] = useState<any>();
 
     useEffect(() => {
-
         const getFrontPage = async (): Promise<any> => {
             try {
-                const { data } = await axios.get('http://localhost:8000/wp-json/wp/v2/frontpage')
+                const { data } = await axios.get('/wp-json/wp/v2/frontpage')
                 setHomePageState(data);
                 return data;
             } catch (error) {

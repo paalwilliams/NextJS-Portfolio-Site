@@ -5,15 +5,14 @@ import style from './SiteBranding.module.scss';
 interface ISiteBrandingProps {
     children?: ReactElement | ReactElement[];
     title: string;
-    homeUrl: string;
     logoUrl?: string
 }
 const SiteBranding = (props: ISiteBrandingProps) => {
-    const { title, homeUrl } = props;
-    if (title && homeUrl) {
+    const { title } = props;
+    if (title) {
         return (
             <div>
-                <h1 className={style.siteMainTitle}><Link href={homeUrl}>{title}</Link></h1>
+                <h1 className={style.siteMainTitle}><Link href={"/"}>{title}</Link></h1>
             </div>
         )
     }

@@ -12,9 +12,9 @@ interface IPortfolioItemProps {
 }
 const PortfolioItem = (props: IPortfolioItemProps) => {
     const { title, excerpt, url, featuredImage } = props;
-    console.log(url)
+    const path = new URL(url).pathname;
     return (
-        <Link href={url}>
+        <Link href={path}>
             <div className={style.portfolioItemCard}>
                 <Image className={style.bgimg} src={featuredImage} layout='fill' alt="" />
                 <h1 className={style.text}>{title}</h1>

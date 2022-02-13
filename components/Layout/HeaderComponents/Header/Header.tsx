@@ -16,7 +16,7 @@ const Header = (props: IHeaderProps) => {
     if (siteData) {
         return (
             <header className={styles.header}>
-                <SiteBranding title={siteData.name} homeUrl={siteData.home} />
+                <SiteBranding title={siteData.name} />
                 <Menu menu={menu} />
             </header>
         );

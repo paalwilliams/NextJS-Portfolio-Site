@@ -9,7 +9,7 @@ const Portfolio = () => {
 
     const getPosts = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/wp-json/wp/v2/portfolio-item?_embed')
+            const response = await axios.get('/wp-json/wp/v2/portfolio-item?_embed')
             const { data } = response
             setPosts(data)
 
